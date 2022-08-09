@@ -44,7 +44,8 @@ iframe#tela {
 
 
 section#redes {
-    text-align: right;
+    position: absolute;
+    right: 1px;
 }
 
 section#redes img {
@@ -60,4 +61,26 @@ section#redes img:hover {
     transform: translate(-3px, -3px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);
     transition: transform 0.5s, border 1s;
+}
+
+
+
+@media only screen and (min-width:400px) and (max-width:430px) {
+    section#redes img {
+        width: 40px;
+        margin: 5px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    section#redes> div {
+        display: inline-block;
+        margin: 0px 10px 0px 0px;
+        position:relative;
+        }
+
+    section#redes img {
+        width: 30px;
+        margin: 3px;
+    }
 }
